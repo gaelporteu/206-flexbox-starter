@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -96,30 +96,42 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0 2em;
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
   height: 100%;
   color: #fff;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 header,
 footer {
-  background-color: #222;
+  /* background-color: #222; */
   height: 80px;
   width: 100%;
 }
 
 main {
-  background-color: #ccc;
+  /* background-color: #ccc; */
   height: 250px;
   width: 100%;
+  font-size: 1.7em;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
 }
 
 header,
@@ -128,7 +140,13 @@ main {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+}
+
+footer {
+    border-top: 1px solid #fff;
+    margin: 50px 0;
+    padding: 20px 0;
 }
 
 #div-1,
@@ -137,6 +155,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
@@ -144,7 +163,7 @@ main {
 }
 
 .wrapper span {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.3em;
 }
 
@@ -160,13 +179,24 @@ main {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #59adf1;
+  /* font-size: 1.6em; */
+  /* background-color: #59adf1; */
   width: 30%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1,
+h2 {
+  font-family: 'Merriweather', serif;
+}
+
+i {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 20px;
 }
 
 /* ==========================================================================
